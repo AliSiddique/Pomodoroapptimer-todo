@@ -11,10 +11,8 @@
 		CC309B802B6293A100AAFAE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC309B7F2B6293A100AAFAE6 /* ContentView.swift */; };
 		CC309B822B6293A300AAFAE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC309B812B6293A300AAFAE6 /* Assets.xcassets */; };
 		CC309B852B6293A300AAFAE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC309B842B6293A300AAFAE6 /* Preview Assets.xcassets */; };
-		CC309B8D2B62943E00AAFAE6 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC309B8C2B62943E00AAFAE6 /* TimerViewModel.swift */; };
-		CC309B8F2B62946700AAFAE6 /* LongTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC309B8E2B62946700AAFAE6 /* LongTimerView.swift */; };
-		CC309B912B62948500AAFAE6 /* ShortTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC309B902B62948500AAFAE6 /* ShortTimerView.swift */; };
-		CC309B932B62949D00AAFAE6 /* WorkTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC309B922B62949D00AAFAE6 /* WorkTimerView.swift */; };
+		CCDBAB602B645FB000560AE3 /* PomodoroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDBAB5F2B645FB000560AE3 /* PomodoroModel.swift */; };
+		CCDBAB632B645FEC00560AE3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDBAB622B645FEC00560AE3 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,10 +21,8 @@
 		CC309B7F2B6293A100AAFAE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CC309B812B6293A300AAFAE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC309B842B6293A300AAFAE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CC309B8C2B62943E00AAFAE6 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
-		CC309B8E2B62946700AAFAE6 /* LongTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongTimerView.swift; sourceTree = "<group>"; };
-		CC309B902B62948500AAFAE6 /* ShortTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortTimerView.swift; sourceTree = "<group>"; };
-		CC309B922B62949D00AAFAE6 /* WorkTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkTimerView.swift; sourceTree = "<group>"; };
+		CCDBAB5F2B645FB000560AE3 /* PomodoroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroModel.swift; sourceTree = "<group>"; };
+		CCDBAB622B645FEC00560AE3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,14 +55,12 @@
 		CC309B7C2B6293A100AAFAE6 /* Pomodoroappdata */ = {
 			isa = PBXGroup;
 			children = (
+				CCDBAB612B645FDB00560AE3 /* Views */,
 				CC309B8B2B6293D500AAFAE6 /* ViewModels */,
 				CC309B7D2B6293A100AAFAE6 /* PomodoroappdataApp.swift */,
 				CC309B7F2B6293A100AAFAE6 /* ContentView.swift */,
 				CC309B812B6293A300AAFAE6 /* Assets.xcassets */,
 				CC309B832B6293A300AAFAE6 /* Preview Content */,
-				CC309B8E2B62946700AAFAE6 /* LongTimerView.swift */,
-				CC309B902B62948500AAFAE6 /* ShortTimerView.swift */,
-				CC309B922B62949D00AAFAE6 /* WorkTimerView.swift */,
 			);
 			path = Pomodoroappdata;
 			sourceTree = "<group>";
@@ -82,9 +76,17 @@
 		CC309B8B2B6293D500AAFAE6 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				CC309B8C2B62943E00AAFAE6 /* TimerViewModel.swift */,
+				CCDBAB5F2B645FB000560AE3 /* PomodoroModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CCDBAB612B645FDB00560AE3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CCDBAB622B645FEC00560AE3 /* HomeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,11 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCDBAB602B645FB000560AE3 /* PomodoroModel.swift in Sources */,
+				CCDBAB632B645FEC00560AE3 /* HomeView.swift in Sources */,
 				CC309B802B6293A100AAFAE6 /* ContentView.swift in Sources */,
-				CC309B932B62949D00AAFAE6 /* WorkTimerView.swift in Sources */,
-				CC309B912B62948500AAFAE6 /* ShortTimerView.swift in Sources */,
-				CC309B8D2B62943E00AAFAE6 /* TimerViewModel.swift in Sources */,
-				CC309B8F2B62946700AAFAE6 /* LongTimerView.swift in Sources */,
 				CC309B7E2B6293A100AAFAE6 /* PomodoroappdataApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,11 +294,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Pomodoroappdata/Preview Content\"";
 				DEVELOPMENT_TEAM = P5AHP6SL3X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Timely;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -323,11 +325,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Pomodoroappdata/Preview Content\"";
 				DEVELOPMENT_TEAM = P5AHP6SL3X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Timely;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
