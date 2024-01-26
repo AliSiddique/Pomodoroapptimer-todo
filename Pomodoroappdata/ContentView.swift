@@ -14,7 +14,7 @@ struct ContentView: View {
     
     init() {
         _selectedTab = State(initialValue: 0)
-        _indicatorOffset = State(initialValue:  UIScreen.main.bounds.width / -3.5)
+        _indicatorOffset = State(initialValue: UIScreen.main.bounds.width / -3.5)
     }
     
     var body: some View {
@@ -36,7 +36,7 @@ struct ContentView: View {
                             .foregroundColor(selectedTab == 1 ? .white : .gray)
                             .onTapGesture {
                                 selectedTab = 1
-                                indicatorOffset = 1
+                                indicatorOffset = 0
                             }
                         Spacer()
                         Text("Long break")
@@ -71,8 +71,10 @@ struct ContentView: View {
             }
         }
         .navigationBarHidden(true)
+        .navigationViewStyle(StackNavigationViewStyle()) // Use StackNavigationViewStyle for iPad
     }
 }
+
 
 #Preview {
     ContentView()
