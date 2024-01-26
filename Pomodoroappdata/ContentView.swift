@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
 struct ContentView: View {
     @ObservedObject var viewModel = ViewModel()
     @State private var selectedTab = 0
