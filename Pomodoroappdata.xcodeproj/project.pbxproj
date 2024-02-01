@@ -7,10 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC24E33C2B68589000F277FD /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = CC24E33B2B68589000F277FD /* RevenueCat */; };
+		CC24E33E2B68589000F277FD /* RevenueCatUI in Frameworks */ = {isa = PBXBuildFile; productRef = CC24E33D2B68589000F277FD /* RevenueCatUI */; };
 		CC309B7E2B6293A100AAFAE6 /* PomodoroappdataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC309B7D2B6293A100AAFAE6 /* PomodoroappdataApp.swift */; };
 		CC309B802B6293A100AAFAE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC309B7F2B6293A100AAFAE6 /* ContentView.swift */; };
 		CC309B822B6293A300AAFAE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC309B812B6293A300AAFAE6 /* Assets.xcassets */; };
 		CC309B852B6293A300AAFAE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC309B842B6293A300AAFAE6 /* Preview Assets.xcassets */; };
+		CC79471E2B6BD33500F6E1F1 /* menu_button.riv in Resources */ = {isa = PBXBuildFile; fileRef = CC79471D2B6BD33500F6E1F1 /* menu_button.riv */; };
+		CC7947202B6BD40C00F6E1F1 /* button.riv in Resources */ = {isa = PBXBuildFile; fileRef = CC79471F2B6BD40C00F6E1F1 /* button.riv */; };
+		CC7947222B6BD83500F6E1F1 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7947212B6BD83500F6E1F1 /* SideMenu.swift */; };
+		CC7CB8D42B68471700ECDCEE /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = CC7CB8D32B68471700ECDCEE /* RiveRuntime */; };
+		CC80EB9D2B6AF06D005DA2E1 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC80EB9C2B6AF06D005DA2E1 /* TabBar.swift */; };
+		CC80EBA32B6AF567005DA2E1 /* RiveAssets in Resources */ = {isa = PBXBuildFile; fileRef = CC80EBA22B6AF567005DA2E1 /* RiveAssets */; };
+		CC80EBA52B6AF8EB005DA2E1 /* icons.riv in Resources */ = {isa = PBXBuildFile; fileRef = CC80EBA42B6AF8EB005DA2E1 /* icons.riv */; };
 		CCDBAB602B645FB000560AE3 /* PomodoroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDBAB5F2B645FB000560AE3 /* PomodoroModel.swift */; };
 		CCDBAB632B645FEC00560AE3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDBAB622B645FEC00560AE3 /* HomeView.swift */; };
 /* End PBXBuildFile section */
@@ -21,6 +30,12 @@
 		CC309B7F2B6293A100AAFAE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CC309B812B6293A300AAFAE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC309B842B6293A300AAFAE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CC79471D2B6BD33500F6E1F1 /* menu_button.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = menu_button.riv; sourceTree = "<group>"; };
+		CC79471F2B6BD40C00F6E1F1 /* button.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = button.riv; sourceTree = "<group>"; };
+		CC7947212B6BD83500F6E1F1 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		CC80EB9C2B6AF06D005DA2E1 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		CC80EBA22B6AF567005DA2E1 /* RiveAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RiveAssets; path = ../../../Desktop/RiveAssets; sourceTree = "<group>"; };
+		CC80EBA42B6AF8EB005DA2E1 /* icons.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = icons.riv; sourceTree = "<group>"; };
 		CCDBAB5F2B645FB000560AE3 /* PomodoroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroModel.swift; sourceTree = "<group>"; };
 		CCDBAB622B645FEC00560AE3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -30,6 +45,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC24E33C2B68589000F277FD /* RevenueCat in Frameworks */,
+				CC7CB8D42B68471700ECDCEE /* RiveRuntime in Frameworks */,
+				CC24E33E2B68589000F277FD /* RevenueCatUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,11 +73,19 @@
 		CC309B7C2B6293A100AAFAE6 /* Pomodoroappdata */ = {
 			isa = PBXGroup;
 			children = (
+				CC80EB9C2B6AF06D005DA2E1 /* TabBar.swift */,
+				CC7947212B6BD83500F6E1F1 /* SideMenu.swift */,
+				CC80EB9B2B6AF05C005DA2E1 /* Components */,
+				CC80EB9A2B6AF047005DA2E1 /* Model */,
 				CCDBAB612B645FDB00560AE3 /* Views */,
 				CC309B8B2B6293D500AAFAE6 /* ViewModels */,
 				CC309B7D2B6293A100AAFAE6 /* PomodoroappdataApp.swift */,
 				CC309B7F2B6293A100AAFAE6 /* ContentView.swift */,
 				CC309B812B6293A300AAFAE6 /* Assets.xcassets */,
+				CC80EBA42B6AF8EB005DA2E1 /* icons.riv */,
+				CC79471D2B6BD33500F6E1F1 /* menu_button.riv */,
+				CC79471F2B6BD40C00F6E1F1 /* button.riv */,
+				CC80EBA22B6AF567005DA2E1 /* RiveAssets */,
 				CC309B832B6293A300AAFAE6 /* Preview Content */,
 			);
 			path = Pomodoroappdata;
@@ -79,6 +105,20 @@
 				CCDBAB5F2B645FB000560AE3 /* PomodoroModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CC80EB9A2B6AF047005DA2E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CC80EB9B2B6AF05C005DA2E1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		CCDBAB612B645FDB00560AE3 /* Views */ = {
@@ -105,6 +145,11 @@
 			dependencies = (
 			);
 			name = Pomodoroappdata;
+			packageProductDependencies = (
+				CC7CB8D32B68471700ECDCEE /* RiveRuntime */,
+				CC24E33B2B68589000F277FD /* RevenueCat */,
+				CC24E33D2B68589000F277FD /* RevenueCatUI */,
+			);
 			productName = Pomodoroappdata;
 			productReference = CC309B7A2B6293A100AAFAE6 /* Pomodoroappdata.app */;
 			productType = "com.apple.product-type.application";
@@ -133,6 +178,10 @@
 				Base,
 			);
 			mainGroup = CC309B712B6293A100AAFAE6;
+			packageReferences = (
+				CC7CB8D22B68471700ECDCEE /* XCRemoteSwiftPackageReference "rive-ios" */,
+				CC24E33A2B68589000F277FD /* XCRemoteSwiftPackageReference "purchases-ios" */,
+			);
 			productRefGroup = CC309B7B2B6293A100AAFAE6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -147,8 +196,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC80EBA52B6AF8EB005DA2E1 /* icons.riv in Resources */,
 				CC309B852B6293A300AAFAE6 /* Preview Assets.xcassets in Resources */,
 				CC309B822B6293A300AAFAE6 /* Assets.xcassets in Resources */,
+				CC7947202B6BD40C00F6E1F1 /* button.riv in Resources */,
+				CC80EBA32B6AF567005DA2E1 /* RiveAssets in Resources */,
+				CC79471E2B6BD33500F6E1F1 /* menu_button.riv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +215,9 @@
 				CCDBAB602B645FB000560AE3 /* PomodoroModel.swift in Sources */,
 				CCDBAB632B645FEC00560AE3 /* HomeView.swift in Sources */,
 				CC309B802B6293A100AAFAE6 /* ContentView.swift in Sources */,
+				CC7947222B6BD83500F6E1F1 /* SideMenu.swift in Sources */,
 				CC309B7E2B6293A100AAFAE6 /* PomodoroappdataApp.swift in Sources */,
+				CC80EB9D2B6AF06D005DA2E1 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +427,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC24E33A2B68589000F277FD /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.32.3;
+			};
+		};
+		CC7CB8D22B68471700ECDCEE /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC24E33B2B68589000F277FD /* RevenueCat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC24E33A2B68589000F277FD /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = RevenueCat;
+		};
+		CC24E33D2B68589000F277FD /* RevenueCatUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC24E33A2B68589000F277FD /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = RevenueCatUI;
+		};
+		CC7CB8D32B68471700ECDCEE /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC7CB8D22B68471700ECDCEE /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CC309B722B6293A100AAFAE6 /* Project object */;
 }

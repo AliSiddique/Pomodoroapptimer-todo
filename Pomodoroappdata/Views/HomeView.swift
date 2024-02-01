@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject var pomodoroModel: PomodoroModel
@@ -236,4 +235,5 @@ struct HomeView: View {
 
 #Preview {
     HomeView()
+        .environmentObject(PomodoroModel())
 }
