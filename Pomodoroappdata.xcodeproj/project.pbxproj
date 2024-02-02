@@ -20,6 +20,11 @@
 		CC80EB9D2B6AF06D005DA2E1 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC80EB9C2B6AF06D005DA2E1 /* TabBar.swift */; };
 		CC80EBA32B6AF567005DA2E1 /* RiveAssets in Resources */ = {isa = PBXBuildFile; fileRef = CC80EBA22B6AF567005DA2E1 /* RiveAssets */; };
 		CC80EBA52B6AF8EB005DA2E1 /* icons.riv in Resources */ = {isa = PBXBuildFile; fileRef = CC80EBA42B6AF8EB005DA2E1 /* icons.riv */; };
+		CC9CABE02B6D286A0045E20F /* SideMenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9CABDF2B6D286A0045E20F /* SideMenuRow.swift */; };
+		CC9CABE32B6D2A040045E20F /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9CABE22B6D2A040045E20F /* SideMenuModel.swift */; };
+		CC9CABE52B6D2A4B0045E20F /* MenuItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9CABE42B6D2A4B0045E20F /* MenuItemModel.swift */; };
+		CC9CABE72B6D2AB00045E20F /* TabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9CABE62B6D2AB00045E20F /* TabBarModel.swift */; };
+		CC9CABEA2B6D2C220045E20F /* UserSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9CABE92B6D2C220045E20F /* UserSettingsView.swift */; };
 		CCDBAB602B645FB000560AE3 /* PomodoroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDBAB5F2B645FB000560AE3 /* PomodoroModel.swift */; };
 		CCDBAB632B645FEC00560AE3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDBAB622B645FEC00560AE3 /* HomeView.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +41,11 @@
 		CC80EB9C2B6AF06D005DA2E1 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		CC80EBA22B6AF567005DA2E1 /* RiveAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RiveAssets; path = ../../../Desktop/RiveAssets; sourceTree = "<group>"; };
 		CC80EBA42B6AF8EB005DA2E1 /* icons.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = icons.riv; sourceTree = "<group>"; };
+		CC9CABDF2B6D286A0045E20F /* SideMenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRow.swift; sourceTree = "<group>"; };
+		CC9CABE22B6D2A040045E20F /* SideMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
+		CC9CABE42B6D2A4B0045E20F /* MenuItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemModel.swift; sourceTree = "<group>"; };
+		CC9CABE62B6D2AB00045E20F /* TabBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModel.swift; sourceTree = "<group>"; };
+		CC9CABE92B6D2C220045E20F /* UserSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsView.swift; sourceTree = "<group>"; };
 		CCDBAB5F2B645FB000560AE3 /* PomodoroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroModel.swift; sourceTree = "<group>"; };
 		CCDBAB622B645FEC00560AE3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +120,7 @@
 		CC80EB9A2B6AF047005DA2E1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CC9CABE12B6D29E70045E20F /* MenuModels */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -117,13 +128,33 @@
 		CC80EB9B2B6AF05C005DA2E1 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				CC9CABDF2B6D286A0045E20F /* SideMenuRow.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		CC9CABE12B6D29E70045E20F /* MenuModels */ = {
+			isa = PBXGroup;
+			children = (
+				CC9CABE22B6D2A040045E20F /* SideMenuModel.swift */,
+				CC9CABE42B6D2A4B0045E20F /* MenuItemModel.swift */,
+				CC9CABE62B6D2AB00045E20F /* TabBarModel.swift */,
+			);
+			path = MenuModels;
+			sourceTree = "<group>";
+		};
+		CC9CABE82B6D2C0B0045E20F /* User */ = {
+			isa = PBXGroup;
+			children = (
+				CC9CABE92B6D2C220045E20F /* UserSettingsView.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 		CCDBAB612B645FDB00560AE3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CC9CABE82B6D2C0B0045E20F /* User */,
 				CCDBAB622B645FEC00560AE3 /* HomeView.swift */,
 			);
 			path = Views;
@@ -213,11 +244,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCDBAB602B645FB000560AE3 /* PomodoroModel.swift in Sources */,
+				CC9CABE32B6D2A040045E20F /* SideMenuModel.swift in Sources */,
+				CC9CABE52B6D2A4B0045E20F /* MenuItemModel.swift in Sources */,
 				CCDBAB632B645FEC00560AE3 /* HomeView.swift in Sources */,
 				CC309B802B6293A100AAFAE6 /* ContentView.swift in Sources */,
+				CC9CABEA2B6D2C220045E20F /* UserSettingsView.swift in Sources */,
 				CC7947222B6BD83500F6E1F1 /* SideMenu.swift in Sources */,
 				CC309B7E2B6293A100AAFAE6 /* PomodoroappdataApp.swift in Sources */,
+				CC9CABE02B6D286A0045E20F /* SideMenuRow.swift in Sources */,
 				CC80EB9D2B6AF06D005DA2E1 /* TabBar.swift in Sources */,
+				CC9CABE72B6D2AB00045E20F /* TabBarModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

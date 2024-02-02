@@ -11,23 +11,9 @@ import RiveRuntime
 struct TabBar: View {
     @Binding var selectedTab: Tab
   
+    @Binding var isOpen:Bool
 
     var body: some View {
-        switch selectedTab {
-              case .chat:
-                  Text("Tab 1 content")
-                  // You can replace this with the content of your first tab
-        case .search:
-                  Text("Tab 2 content")
-                  // You can replace this with the content of your second tab
-              case .bell:
-                  Text("Tab 3 content")
-                  // You can replace this with the content of your third tab
-        case .timer:
-            Text("d")
-        case .user:
-            Text("D")
-        }
         VStack {
             Spacer()
             HStack {
@@ -35,7 +21,7 @@ struct TabBar: View {
 
             }
             .padding(12)
-            .background(Color.teal)
+            .background(Color("Background 2"))
             .mask(RoundedRectangle(cornerRadius: 20.0, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/))
             .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
             .overlay(RoundedRectangle(cornerRadius: 20, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/)
@@ -63,7 +49,6 @@ struct TabBar: View {
                         
                         VStack {
                             RoundedRectangle(cornerRadius: 2)
-                                .fill(Color.red)
                                 .frame(width:20,height:4)
                                 .offset(y:-4)
                                 .opacity(selectedTab == tab.tab ? 1:0)
@@ -75,33 +60,10 @@ struct TabBar: View {
     }
 }
 #Preview {
-    TabBar(selectedTab: .constant(.chat))
+    TabBar(selectedTab: .constant(.chat),isOpen: .constant(true))
 }
 
-struct TabItem:Identifiable {
-    var id = UUID()
-    var icon:RiveViewModel
-    var tab:Tab
-}
-
-var tabItems = [
-    TabItem(icon: RiveViewModel(fileName: "icons",
-                                stateMachineName: "HOME_interactivity", artboardName: "HOME"),tab: .chat),
-    TabItem(icon: RiveViewModel(fileName: "icons",
-                                stateMachineName: "SEARCH_Interactivity", artboardName: "SEARCH"),tab: .search),
-    TabItem(icon: RiveViewModel(fileName: "icons",
-                                stateMachineName: "BELL_Interactivity", artboardName: "BELL"),tab: .bell),
-    TabItem(icon: RiveViewModel(fileName: "icons",
-                                stateMachineName: "TIMER_Interactivity", artboardName: "TIMER"),tab:.timer),
-    TabItem(icon: RiveViewModel(fileName: "icons",
-                                stateMachineName: "USER_Interactivity", artboardName: "USER"),tab: .user)
-]
 
 
-enum Tab {
-    case chat
-    case search
-    case bell
-    case timer
-    case user
-}
+
+

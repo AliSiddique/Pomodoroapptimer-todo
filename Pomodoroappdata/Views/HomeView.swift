@@ -197,7 +197,7 @@ struct HomeView: View {
             } label: {
                 Text("Save")
                     .font(.title3)
-                    .padding(.bottom,50)
+                    .padding(.bottom,100)
                     .fontWeight(.semibold)
                     .foregroundColor(.white)
                     .padding(.vertical)

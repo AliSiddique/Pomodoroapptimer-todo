@@ -9,6 +9,7 @@ import SwiftUI
 import RiveRuntime
 
 struct SideMenu: View {
+    @State var selectedMenu:SelectedMenu = .home
     var body: some View {
         VStack {
             HStack {
@@ -23,11 +24,42 @@ struct SideMenu: View {
                 Spacer()
             }
             .padding()
+            Text("Browse")
+                .padding(.top,20)
+                .padding(.horizontal,20)
+                .font(.subheadline)
+                .frame(maxWidth:.infinity,alignment: .leading)
+            VStack(alignment:.leading,spacing:0) {
+                ForEach(menuItems) { menuItem in
+                    Rectangle()
+                        .frame(height:1)
+                        .opacity(0.3)
+                        .padding(.horizontal,16)
+                    SideMenuRow(menuItem: menuItem,selectedMenu: $selectedMenu)
+                }
+            }
+            .padding(8)
+            
+            Text("History")
+                .padding(.top,20)
+                .padding(.horizontal,20)
+                .font(.subheadline)
+                .frame(maxWidth:.infinity,alignment: .leading)
+            VStack(alignment:.leading,spacing:0) {
+                ForEach(menuItems2) { menuItem in
+                    Rectangle()
+                        .frame(height:1)
+                        .opacity(0.3)
+                        .padding(.horizontal,16)
+                    SideMenuRow(menuItem: menuItem,selectedMenu: $selectedMenu)
+                }
+            }
             Spacer()
+        
         }
             .foregroundColor(.white)
             .frame(maxWidth: 288,maxHeight:.infinity)
-            .background(.black)
+            .background(Color("Background 2"))
             .mask(RoundedRectangle(cornerRadius: 20, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/))
         .frame(maxWidth:.infinity,alignment: .leading)
         
@@ -39,14 +71,7 @@ struct SideMenu: View {
 }
 
 
-struct SideMenuItem : Identifiable {
-    var id = UUID()
-    var text:String
-    var icon:RiveViewModel
-}
 
 
-//var sideMenuItems = [
-//    
-//    
-//]
+
+
