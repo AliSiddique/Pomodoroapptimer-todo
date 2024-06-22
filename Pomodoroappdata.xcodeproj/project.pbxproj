@@ -10,44 +10,20 @@
 		CC24E33C2B68589000F277FD /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = CC24E33B2B68589000F277FD /* RevenueCat */; };
 		CC24E33E2B68589000F277FD /* RevenueCatUI in Frameworks */ = {isa = PBXBuildFile; productRef = CC24E33D2B68589000F277FD /* RevenueCatUI */; };
 		CC309B7E2B6293A100AAFAE6 /* PomodoroappdataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC309B7D2B6293A100AAFAE6 /* PomodoroappdataApp.swift */; };
-		CC309B802B6293A100AAFAE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC309B7F2B6293A100AAFAE6 /* ContentView.swift */; };
 		CC309B822B6293A300AAFAE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC309B812B6293A300AAFAE6 /* Assets.xcassets */; };
 		CC309B852B6293A300AAFAE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC309B842B6293A300AAFAE6 /* Preview Assets.xcassets */; };
-		CC79471E2B6BD33500F6E1F1 /* menu_button.riv in Resources */ = {isa = PBXBuildFile; fileRef = CC79471D2B6BD33500F6E1F1 /* menu_button.riv */; };
-		CC7947202B6BD40C00F6E1F1 /* button.riv in Resources */ = {isa = PBXBuildFile; fileRef = CC79471F2B6BD40C00F6E1F1 /* button.riv */; };
-		CC7947222B6BD83500F6E1F1 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7947212B6BD83500F6E1F1 /* SideMenu.swift */; };
-		CC7CB8D42B68471700ECDCEE /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = CC7CB8D32B68471700ECDCEE /* RiveRuntime */; };
-		CC80EB9D2B6AF06D005DA2E1 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC80EB9C2B6AF06D005DA2E1 /* TabBar.swift */; };
-		CC80EBA32B6AF567005DA2E1 /* RiveAssets in Resources */ = {isa = PBXBuildFile; fileRef = CC80EBA22B6AF567005DA2E1 /* RiveAssets */; };
-		CC80EBA52B6AF8EB005DA2E1 /* icons.riv in Resources */ = {isa = PBXBuildFile; fileRef = CC80EBA42B6AF8EB005DA2E1 /* icons.riv */; };
-		CC9CABE02B6D286A0045E20F /* SideMenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9CABDF2B6D286A0045E20F /* SideMenuRow.swift */; };
-		CC9CABE32B6D2A040045E20F /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9CABE22B6D2A040045E20F /* SideMenuModel.swift */; };
-		CC9CABE52B6D2A4B0045E20F /* MenuItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9CABE42B6D2A4B0045E20F /* MenuItemModel.swift */; };
-		CC9CABE72B6D2AB00045E20F /* TabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9CABE62B6D2AB00045E20F /* TabBarModel.swift */; };
-		CC9CABEA2B6D2C220045E20F /* UserSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9CABE92B6D2C220045E20F /* UserSettingsView.swift */; };
-		CCDBAB602B645FB000560AE3 /* PomodoroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDBAB5F2B645FB000560AE3 /* PomodoroModel.swift */; };
-		CCDBAB632B645FEC00560AE3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDBAB622B645FEC00560AE3 /* HomeView.swift */; };
+		CC770D502C274AC200AC6390 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC770D4F2C274AC200AC6390 /* ContentView.swift */; };
+		CC770D552C27532100AC6390 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC770D542C27532100AC6390 /* Graph.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CC309B7A2B6293A100AAFAE6 /* Pomodoroappdata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pomodoroappdata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC309B7D2B6293A100AAFAE6 /* PomodoroappdataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroappdataApp.swift; sourceTree = "<group>"; };
-		CC309B7F2B6293A100AAFAE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CC309B812B6293A300AAFAE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC309B842B6293A300AAFAE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CC79471D2B6BD33500F6E1F1 /* menu_button.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = menu_button.riv; sourceTree = "<group>"; };
-		CC79471F2B6BD40C00F6E1F1 /* button.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = button.riv; sourceTree = "<group>"; };
-		CC7947212B6BD83500F6E1F1 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
-		CC80EB9C2B6AF06D005DA2E1 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
-		CC80EBA22B6AF567005DA2E1 /* RiveAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RiveAssets; path = ../../../Desktop/RiveAssets; sourceTree = "<group>"; };
-		CC80EBA42B6AF8EB005DA2E1 /* icons.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = icons.riv; sourceTree = "<group>"; };
-		CC9CABDF2B6D286A0045E20F /* SideMenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRow.swift; sourceTree = "<group>"; };
-		CC9CABE22B6D2A040045E20F /* SideMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
-		CC9CABE42B6D2A4B0045E20F /* MenuItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemModel.swift; sourceTree = "<group>"; };
-		CC9CABE62B6D2AB00045E20F /* TabBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModel.swift; sourceTree = "<group>"; };
-		CC9CABE92B6D2C220045E20F /* UserSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsView.swift; sourceTree = "<group>"; };
-		CCDBAB5F2B645FB000560AE3 /* PomodoroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroModel.swift; sourceTree = "<group>"; };
-		CCDBAB622B645FEC00560AE3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CC770D4F2C274AC200AC6390 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CC770D532C2751B200AC6390 /* Pomodoroappdata.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pomodoroappdata.entitlements; sourceTree = "<group>"; };
+		CC770D542C27532100AC6390 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +32,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC24E33C2B68589000F277FD /* RevenueCat in Frameworks */,
-				CC7CB8D42B68471700ECDCEE /* RiveRuntime in Frameworks */,
 				CC24E33E2B68589000F277FD /* RevenueCatUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,20 +58,12 @@
 		CC309B7C2B6293A100AAFAE6 /* Pomodoroappdata */ = {
 			isa = PBXGroup;
 			children = (
-				CC80EB9C2B6AF06D005DA2E1 /* TabBar.swift */,
-				CC7947212B6BD83500F6E1F1 /* SideMenu.swift */,
-				CC80EB9B2B6AF05C005DA2E1 /* Components */,
-				CC80EB9A2B6AF047005DA2E1 /* Model */,
-				CCDBAB612B645FDB00560AE3 /* Views */,
-				CC309B8B2B6293D500AAFAE6 /* ViewModels */,
+				CC770D532C2751B200AC6390 /* Pomodoroappdata.entitlements */,
 				CC309B7D2B6293A100AAFAE6 /* PomodoroappdataApp.swift */,
-				CC309B7F2B6293A100AAFAE6 /* ContentView.swift */,
 				CC309B812B6293A300AAFAE6 /* Assets.xcassets */,
-				CC80EBA42B6AF8EB005DA2E1 /* icons.riv */,
-				CC79471D2B6BD33500F6E1F1 /* menu_button.riv */,
-				CC79471F2B6BD40C00F6E1F1 /* button.riv */,
-				CC80EBA22B6AF567005DA2E1 /* RiveAssets */,
 				CC309B832B6293A300AAFAE6 /* Preview Content */,
+				CC770D4F2C274AC200AC6390 /* ContentView.swift */,
+				CC770D542C27532100AC6390 /* Graph.swift */,
 			);
 			path = Pomodoroappdata;
 			sourceTree = "<group>";
@@ -107,57 +74,6 @@
 				CC309B842B6293A300AAFAE6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		CC309B8B2B6293D500AAFAE6 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				CCDBAB5F2B645FB000560AE3 /* PomodoroModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		CC80EB9A2B6AF047005DA2E1 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				CC9CABE12B6D29E70045E20F /* MenuModels */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		CC80EB9B2B6AF05C005DA2E1 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				CC9CABDF2B6D286A0045E20F /* SideMenuRow.swift */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		CC9CABE12B6D29E70045E20F /* MenuModels */ = {
-			isa = PBXGroup;
-			children = (
-				CC9CABE22B6D2A040045E20F /* SideMenuModel.swift */,
-				CC9CABE42B6D2A4B0045E20F /* MenuItemModel.swift */,
-				CC9CABE62B6D2AB00045E20F /* TabBarModel.swift */,
-			);
-			path = MenuModels;
-			sourceTree = "<group>";
-		};
-		CC9CABE82B6D2C0B0045E20F /* User */ = {
-			isa = PBXGroup;
-			children = (
-				CC9CABE92B6D2C220045E20F /* UserSettingsView.swift */,
-			);
-			path = User;
-			sourceTree = "<group>";
-		};
-		CCDBAB612B645FDB00560AE3 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				CC9CABE82B6D2C0B0045E20F /* User */,
-				CCDBAB622B645FEC00560AE3 /* HomeView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +93,6 @@
 			);
 			name = Pomodoroappdata;
 			packageProductDependencies = (
-				CC7CB8D32B68471700ECDCEE /* RiveRuntime */,
 				CC24E33B2B68589000F277FD /* RevenueCat */,
 				CC24E33D2B68589000F277FD /* RevenueCatUI */,
 			);
@@ -210,7 +125,6 @@
 			);
 			mainGroup = CC309B712B6293A100AAFAE6;
 			packageReferences = (
-				CC7CB8D22B68471700ECDCEE /* XCRemoteSwiftPackageReference "rive-ios" */,
 				CC24E33A2B68589000F277FD /* XCRemoteSwiftPackageReference "purchases-ios" */,
 			);
 			productRefGroup = CC309B7B2B6293A100AAFAE6 /* Products */;
@@ -227,12 +141,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC80EBA52B6AF8EB005DA2E1 /* icons.riv in Resources */,
 				CC309B852B6293A300AAFAE6 /* Preview Assets.xcassets in Resources */,
 				CC309B822B6293A300AAFAE6 /* Assets.xcassets in Resources */,
-				CC7947202B6BD40C00F6E1F1 /* button.riv in Resources */,
-				CC80EBA32B6AF567005DA2E1 /* RiveAssets in Resources */,
-				CC79471E2B6BD33500F6E1F1 /* menu_button.riv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,17 +153,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCDBAB602B645FB000560AE3 /* PomodoroModel.swift in Sources */,
-				CC9CABE32B6D2A040045E20F /* SideMenuModel.swift in Sources */,
-				CC9CABE52B6D2A4B0045E20F /* MenuItemModel.swift in Sources */,
-				CCDBAB632B645FEC00560AE3 /* HomeView.swift in Sources */,
-				CC309B802B6293A100AAFAE6 /* ContentView.swift in Sources */,
-				CC9CABEA2B6D2C220045E20F /* UserSettingsView.swift in Sources */,
-				CC7947222B6BD83500F6E1F1 /* SideMenu.swift in Sources */,
+				CC770D552C27532100AC6390 /* Graph.swift in Sources */,
+				CC770D502C274AC200AC6390 /* ContentView.swift in Sources */,
 				CC309B7E2B6293A100AAFAE6 /* PomodoroappdataApp.swift in Sources */,
-				CC9CABE02B6D286A0045E20F /* SideMenuRow.swift in Sources */,
-				CC80EB9D2B6AF06D005DA2E1 /* TabBar.swift in Sources */,
-				CC9CABE72B6D2AB00045E20F /* TabBarModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +286,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Pomodoroappdata/Pomodoroappdata.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Pomodoroappdata/Preview Content\"";
@@ -415,6 +318,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Pomodoroappdata/Pomodoroappdata.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Pomodoroappdata/Preview Content\"";
@@ -473,14 +377,6 @@
 				minimumVersion = 4.32.3;
 			};
 		};
-		CC7CB8D22B68471700ECDCEE /* XCRemoteSwiftPackageReference "rive-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/rive-app/rive-ios";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.7.1;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -493,11 +389,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CC24E33A2B68589000F277FD /* XCRemoteSwiftPackageReference "purchases-ios" */;
 			productName = RevenueCatUI;
-		};
-		CC7CB8D32B68471700ECDCEE /* RiveRuntime */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CC7CB8D22B68471700ECDCEE /* XCRemoteSwiftPackageReference "rive-ios" */;
-			productName = RiveRuntime;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
