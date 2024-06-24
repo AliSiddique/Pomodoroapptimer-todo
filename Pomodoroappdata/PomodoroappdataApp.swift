@@ -6,30 +6,34 @@
 //
 
 import SwiftUI
+import UIKit
 
 @main
 struct PomodoroappdataApp: App {
-    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
         WindowGroup {
-            TabView {
-                ContentView()
-                    .tabItem {
-                        Image(systemName: "house")
-                        Text("Home")
-                    }
-                Home()
-                    .tabItem {
-                        Image(systemName: "chart.bar")
-                        Text("Chart")
-                    }
-                SettingsView()
-                    .tabItem {
-                        Image(systemName: "gear")
-                        Text("Settings")
-                    }
-            }
+       ContentView()
+
         }
        
+    }
+}
+class AppDelegate: NSObject, UIApplicationDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+          UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+              if let error = error {
+                  print("Request notification authorization error: \(error)")
+              }
+          }
+          return true
+      }
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        // Your code to handle entering background
+    }
+
+    func applicationWillEnterForeground(_ application: UIApplication) {
+        // Your code to handle entering foreground
     }
 }
