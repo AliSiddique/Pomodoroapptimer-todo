@@ -7,26 +7,43 @@
 
 import SwiftUI
 import UIKit
-
+import RevenueCat
 @main
 struct PomodoroappdataApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @StateObject var userViewModel = UserViewModel()
+    @AppStorage("isOnboarding") var isOnboarding: Bool?
 
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+//    init(){
+//        Purchases.configure(withAPIKey: "appl_xGRTznZjhmwqDLPinoNLpVDjFoV")
+//        Purchases.logLevel = .debug
+//        Purchases.shared.delegate = self // make sure to set this after calling configure
+//
+//    }
     var body: some Scene {
         WindowGroup {
-       ContentView()
+            if isOnboarding != nil {
+                ContentView()
+                    .preferredColorScheme(.dark)
+
+            } else {
+                OnboardingView()
+                    .preferredColorScheme(.dark)
+            }
 
         }
+        .environmentObject(userViewModel)
+        
+
        
     }
 }
-class AppDelegate: NSObject, UIApplicationDelegate {
+class AppDelegate: NSObject, UIApplicationDelegate, PurchasesDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-          UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
-              if let error = error {
-                  print("Request notification authorization error: \(error)")
-              }
-          }
+        Purchases.logLevel = .debug
+          Purchases.configure(withAPIKey: "appl_xGRTznZjhmwqDLPinoNLpVDjFoV")
+          Purchases.shared.delegate = self // make sure to set this after calling configure
+
           return true
       }
     func applicationDidEnterBackground(_ application: UIApplication) {

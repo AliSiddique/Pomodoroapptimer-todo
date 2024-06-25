@@ -15,6 +15,9 @@
 		CC605F522C29D68E00B470B8 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC605F512C29D68E00B470B8 /* TimerView.swift */; };
 		CC770D502C274AC200AC6390 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC770D4F2C274AC200AC6390 /* ContentView.swift */; };
 		CC770D552C27532100AC6390 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC770D542C27532100AC6390 /* Graph.swift */; };
+		CCA78E542C2AD1AB00E37DCC /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA78E532C2AD1AB00E37DCC /* UserViewModel.swift */; };
+		CCA78E562C2AD35400E37DCC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA78E552C2AD35400E37DCC /* SettingsView.swift */; };
+		CCB61ED32C2B089A00745859 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB61ED22C2B089A00745859 /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +43,9 @@
 		CC770D4F2C274AC200AC6390 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CC770D532C2751B200AC6390 /* Pomodoroappdata.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pomodoroappdata.entitlements; sourceTree = "<group>"; };
 		CC770D542C27532100AC6390 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		CCA78E532C2AD1AB00E37DCC /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		CCA78E552C2AD35400E37DCC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CCB61ED22C2B089A00745859 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,7 @@
 		CC309B7C2B6293A100AAFAE6 /* Pomodoroappdata */ = {
 			isa = PBXGroup;
 			children = (
+				CCA78E522C2AD19900E37DCC /* ViewModels */,
 				CC605F502C29D67F00B470B8 /* Views */,
 				CC770D532C2751B200AC6390 /* Pomodoroappdata.entitlements */,
 				CC309B7D2B6293A100AAFAE6 /* PomodoroappdataApp.swift */,
@@ -82,6 +89,7 @@
 				CC309B832B6293A300AAFAE6 /* Preview Content */,
 				CC770D4F2C274AC200AC6390 /* ContentView.swift */,
 				CC770D542C27532100AC6390 /* Graph.swift */,
+				CCB61ED22C2B089A00745859 /* OnboardingView.swift */,
 			);
 			path = Pomodoroappdata;
 			sourceTree = "<group>";
@@ -98,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				CC605F512C29D68E00B470B8 /* TimerView.swift */,
+				CCA78E552C2AD35400E37DCC /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -108,6 +117,14 @@
 				CC605F5B2C29EC4200B470B8 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCA78E522C2AD19900E37DCC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CCA78E532C2AD1AB00E37DCC /* UserViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,7 +208,10 @@
 				CC770D552C27532100AC6390 /* Graph.swift in Sources */,
 				CC770D502C274AC200AC6390 /* ContentView.swift in Sources */,
 				CC605F522C29D68E00B470B8 /* TimerView.swift in Sources */,
+				CCA78E562C2AD35400E37DCC /* SettingsView.swift in Sources */,
+				CCA78E542C2AD1AB00E37DCC /* UserViewModel.swift in Sources */,
 				CC309B7E2B6293A100AAFAE6 /* PomodoroappdataApp.swift in Sources */,
+				CCB61ED32C2B089A00745859 /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,7 +5,6 @@
 //  Created by Ali Siddique on 24/06/2024.
 //
 
-
 import SwiftUI
 import Combine
 import UserNotifications
@@ -25,9 +24,14 @@ class TimerViewModel: ObservableObject {
 
     init() {
         self.isWorkTime = true
-        self.timeRemaining = 0
         self.timerActive = false
         self.roundsCompleted = 0
+        self.timeRemaining = 0
+        initializeTimeRemaining()
+    }
+
+    private func initializeTimeRemaining() {
+        self.timeRemaining = self.workDuration
     }
 
     var progress: Double {
@@ -39,7 +43,9 @@ class TimerViewModel: ObservableObject {
         if timerActive { return }
         timerActive = true
         lastUpdate = Date()
-        timeRemaining = isWorkTime ? workDuration : breakDuration
+        if timeRemaining == 0 {
+            timeRemaining = isWorkTime ? workDuration : breakDuration
+        }
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
             self.updateTimer()
         }
@@ -48,6 +54,7 @@ class TimerViewModel: ObservableObject {
 
     func stopTimer() {
         timer?.invalidate()
+        timer = nil
         timerActive = false
         endBackgroundTask()
     }
@@ -110,63 +117,6 @@ class TimerViewModel: ObservableObject {
             UIApplication.shared.endBackgroundTask(backgroundTask)
             self.backgroundTask = .invalid
         }
-    }
-}
-
-import SwiftUI
-
-
-struct SettingsView: View {
-    @AppStorage("workDuration") private var workDuration: TimeInterval = 25 * 60
-    @AppStorage("breakDuration") private var breakDuration: TimeInterval = 5 * 60
-    @AppStorage("autoStartBreak") private var autoStartBreak: Bool = false
-    
-    var body: some View {
-        NavigationView {
-            Form {
-                Section {
-                    Toggle(isOn: $autoStartBreak) {
-                        Text("Auto Start Break")
-                    }
-                }
-                
-                NavigationLink(destination: TimerSettingsView()) {
-                    Text("Change Timer")
-                }
-            }
-            .navigationBarTitle("Settings")
-        }
-    }
-}
-
-struct TimerSettingsView: View {
-    @AppStorage("workDuration") private var workDuration: TimeInterval = 25 * 60
-    @AppStorage("breakDuration") private var breakDuration: TimeInterval = 5 * 60
-
-    var body: some View {
-        Form {
-            Section(header: Text("Work Duration")) {
-                DurationPicker(duration: $workDuration)
-            }
-
-            Section(header: Text("Break Duration")) {
-                DurationPicker(duration: $breakDuration)
-            }
-        }
-        .navigationBarTitle("Change Timer")
-    }
-}
-
-struct DurationPicker: View {
-    @Binding var duration: TimeInterval
-
-    var body: some View {
-        Picker(selection: $duration, label: Text("Duration")) {
-            ForEach(1..<61) { minute in
-                Text("\(minute) minutes").tag(TimeInterval(minute * 60))
-            }
-        }
-        .pickerStyle(WheelPickerStyle())
     }
 }
 

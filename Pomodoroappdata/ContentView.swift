@@ -12,10 +12,10 @@ struct ContentView: View {
             
             TimerView()
                 .tabItem {
-                    Image(systemName: "chart.bar")
-                    Text("Chart")
+                    Image(systemName: "clock")
+                    Text("Timer")
                 }
-            SettingsView()
+            SettingsView(userViewModel: UserViewModel())
                 .tabItem {
                     Image(systemName: "gear")
                     Text("Settings")
