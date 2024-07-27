@@ -8,31 +8,45 @@
 import SwiftUI
 import UIKit
 import RevenueCat
+import SwiftData
 @main
 struct PomodoroappdataApp: App {
     @StateObject var userViewModel = UserViewModel()
+    
     @AppStorage("isOnboarding") var isOnboarding: Bool?
+    var sharedModelContainer: ModelContainer = {
+        let schema = Schema([
+            Tasks.self,PomodoroSession.self
+        ])
+        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+
+        do {
+            return try ModelContainer(for: schema, configurations: [modelConfiguration])
+        } catch {
+            fatalError("Could not create ModelContainer: \(error)")
+        }
+    }()
 
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-//    init(){
-//        Purchases.configure(withAPIKey: "appl_xGRTznZjhmwqDLPinoNLpVDjFoV")
-//        Purchases.logLevel = .debug
-//        Purchases.shared.delegate = self // make sure to set this after calling configure
-//
-//    }
+    init(){
+        Purchases.configure(withAPIKey: "appl_xGRTznZjhmwqDLPinoNLpVDjFoV")
+        Purchases.logLevel = .debug
+
+    }
     var body: some Scene {
         WindowGroup {
             if isOnboarding != nil {
                 ContentView()
-                    .preferredColorScheme(.dark)
+                    .preferredColorScheme(.light)
 
             } else {
                 OnboardingView()
-                    .preferredColorScheme(.dark)
+                    .preferredColorScheme(.light)
             }
 
         }
         .environmentObject(userViewModel)
+        .modelContainer(sharedModelContainer)
         
 
        

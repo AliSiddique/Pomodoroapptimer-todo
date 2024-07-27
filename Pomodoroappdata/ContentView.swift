@@ -6,14 +6,24 @@
 //
 import SwiftUI
 struct ContentView: View {
-    
+    @Environment(\.modelContext) private var modelContext
+
     var body: some View {
         TabView {
-            
-            TimerView()
+            Home()
+                .tabItem {
+                    Image(systemName: "house")
+                    Text("Home")
+                }
+            TimerView(modelContext: modelContext)
                 .tabItem {
                     Image(systemName: "clock")
                     Text("Timer")
+                }
+            AnalyticsView(userViewModel: UserViewModel())
+                .tabItem {
+                    Image(systemName: "chart.bar")
+                    Text("Progress")
                 }
             SettingsView(userViewModel: UserViewModel())
                 .tabItem {
@@ -21,7 +31,8 @@ struct ContentView: View {
                     Text("Settings")
                 }
         }
-        .background(Color("BG")).ignoresSafeArea()
+        .preferredColorScheme(.light)
+
         
     }
 }

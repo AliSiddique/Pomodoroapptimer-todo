@@ -23,6 +23,7 @@ class UserViewModel: ObservableObject {
             self.isSubscriptionActive = customerInfo?.entitlements.all["pro"]?.isActive == true
             print(self.isSubscriptionActive)
             
+            
         }
     }
     

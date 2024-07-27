@@ -7,12 +7,55 @@
 		<key>Pomodoroappdata.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>device-monitor.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>pomodoro-widgetExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>shield-config.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>shields.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>widgetExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>CC309B792B6293A100AAFAE6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CC455EEA2C401A4000CE4972</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CCD2A54D2C406FAA00C61977</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CCF382232C3AC713007D8F8F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
